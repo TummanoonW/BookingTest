@@ -62,6 +62,11 @@ app.post('/many', async (req, res) => {
 });
 
 //READ
+app.get('/', async (req, res) => {
+    res.send("WELCOME TO TEST BOOKING");
+});
+
+//READ
 app.get('/:id', async (req, res) => {
     try {
         const mongo = req.app.locals.mongo;
